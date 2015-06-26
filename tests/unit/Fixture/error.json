@@ -1,0 +1,8 @@
+{
+    "message": "The request cannot be fulfilled due to bad syntax.",
+    "errors": {
+        "field": {
+            "code":"Error message."
+        }
+    }
+}

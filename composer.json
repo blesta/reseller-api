@@ -1,0 +1,31 @@
+{
+    "name":"blesta/reseller-api",
+    "description": "The official implementation of the Blesta Reseller API",
+    "homepage": "http://github.com/blesta/reseller-api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cody Phillips",
+            "email": "therealclphillips@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "~2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "blesta\\ResellerApi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "blesta\\ResellerApi\\Tests\\": "tests"
+        }
+    }
+}
