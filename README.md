@@ -76,7 +76,10 @@ $licenses = new Licenses($connection);
 #### Add License
 
 ```php
-$data = array('pricing_id' => 1, 'test_mode' => 'true');
+$data = array(
+    'pricing_id' => 1,
+    'test_mode' => 'true'
+);
 $result = $licenses->add($data);
 $licenseKey = $result->response();
 ```
@@ -84,27 +87,40 @@ $licenseKey = $result->response();
 #### Update License
 
 ```php
-$data = array('license' => 'abcdef0123456789', 'reissue_status' => 'reissue', 'test_mode' => 'true');
+$data = array(
+    'license' => 'abcdef0123456789',
+    'reissue_status' => 'reissue',
+    'test_mode' => 'true'
+);
 $licenses->update($data);
 ```
 
 #### Cancel License
 
 ```php
-$data = array('license' => 'abcdef0123456789', 'test_mode' => 'true');
+$data = array(
+    'license' => 'abcdef0123456789',
+    'test_mode' => 'true'
+);
 $licenses->cancel($data);
 ```
 
 #### Suspend License
 
 ```php
-$data = array('license' => 'abcdef0123456789', 'test_mode' => 'true');
+$data = array(
+    'license' => 'abcdef0123456789',
+    'test_mode' => 'true'
+);
 $licenses->suspend($data);
 ```
 
 #### Unuspend License
 ```php
-$data = array('license' => 'abcdef0123456789', 'test_mode' => 'true');
+$data = array(
+    'license' => 'abcdef0123456789',
+    'test_mode' => 'true'
+);
 $licenses->unsuspend($data);
 ```
 
