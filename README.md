@@ -1,5 +1,7 @@
 # blesta/reseller-api
 
+[![Build Status](https://travis-ci.org/blesta/reseller-api.svg?branch=master)](https://travis-ci.org/blesta/reseller-api) [![Coverage Status](https://coveralls.io/repos/blesta/reseller-api/badge.svg)](https://coveralls.io/r/blesta/reseller-api)
+
 The Blesta Reseller API library.
 
 This library implements the [Reseller API](http://docs.blesta.com/display/dev/Reseller+API).
