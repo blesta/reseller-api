@@ -1,8 +1,6 @@
 <?php
 namespace blesta\ResellerApi;
 
-use blesta\ResellerApi\RequestInterface;
-
 /**
  * Connection
  */
