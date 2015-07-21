@@ -142,7 +142,7 @@ print_r($result->response());
 
 ## Command Factory
 
-The examples shown in the Basic Usuage section demonstrate direct usage of command objects. You may find the built-in command factory more user friendly.
+The examples shown in the Basic Usage section demonstrate direct usage of command objects. You may find the built-in command factory more user friendly.
 
 ```php
 $commandFactory = new \blesta\ResellerApi\Command\CommandFactory();
