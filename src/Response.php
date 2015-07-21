@@ -34,11 +34,12 @@ class Response implements ResponseInterface
     /**
      * Decoded response body
      *
+     * @param boolean $assoc Convert result to associative array
      * @return object|array|string|int
      */
-    private function decodeResponse()
+    private function decodeResponse($assoc = false)
     {
-        return json_decode($this->body);
+        return json_decode($this->body, $assoc);
     }
 
     /**
@@ -46,9 +47,9 @@ class Response implements ResponseInterface
      */
     public function errors()
     {
-        $response = $this->decodeResponse();
-        if (isset($response->errors)) {
-            return $response->errors;
+        $response = $this->decodeResponse(true);
+        if (isset($response['errors'])) {
+            return $response['errors'];
         }
         return array();
     }

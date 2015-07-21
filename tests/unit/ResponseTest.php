@@ -62,10 +62,10 @@ class ResponseTest extends PHPUnit_Framework_TestCase
     public function testErrors()
     {
         $fixture = $this->loadFixture('error.json');
-        $data = json_decode($fixture);
+        $data = json_decode($fixture, true);
 
         $this->assertEquals(
-            $data->errors,
+            $data['errors'],
             $this->response
                 ->withBody($fixture)
                 ->errors()
