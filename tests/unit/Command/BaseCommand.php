@@ -1,8 +1,8 @@
 <?php
-namespace blesta\ResellerApi\Tests\Command;
+namespace Blesta\ResellerApi\Tests\Command;
 
-use blesta\ResellerApi\ConnectionInterface;
-use blesta\ResellerApi\ResponseInterface;
+use Blesta\ResellerApi\ConnectionInterface;
+use Blesta\ResellerApi\ResponseInterface;
 use PHPUnit_Framework_TestCase;
 
 /**
@@ -11,21 +11,21 @@ use PHPUnit_Framework_TestCase;
 abstract class BaseCommand extends PHPUnit_Framework_TestCase
 {
     /**
-     * @return \blesta\ResellerApi\Response
+     * @return \Blesta\ResellerApi\Response
      */
     public function getResponseMock()
     {
-        return $this->getMockBuilder('\blesta\ResellerApi\Response')
+        return $this->getMockBuilder('\Blesta\ResellerApi\Response')
             ->disableOriginalConstructor()
             ->getMock();
     }
 
     /**
-     * @return \blesta\ResellerApi\ConnectionInterface
+     * @return \Blesta\ResellerApi\ConnectionInterface
      */
     public function getConnectionMock()
     {
-        return $this->getMock('\blesta\ResellerApi\ConnectionInterface');
+        return $this->getMock('\Blesta\ResellerApi\ConnectionInterface');
     }
 
     /**

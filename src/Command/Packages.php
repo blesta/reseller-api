@@ -1,5 +1,5 @@
 <?php
-namespace blesta\ResellerApi\Command;
+namespace Blesta\ResellerApi\Command;
 
 /**
  * Packages
@@ -9,7 +9,7 @@ class Packages extends AbstractCommand
     /**
      * Fetch all available reseller packages
      *
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function get()
     {
@@ -20,7 +20,7 @@ class Packages extends AbstractCommand
      * Fetch pricing for a specific package
      *
      * @param int $package_id The ID of the package
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function getPricing($package_id)
     {

@@ -1,5 +1,5 @@
 <?php
-namespace blesta\ResellerApi\Command;
+namespace Blesta\ResellerApi\Command;
 
 /**
  * Credits
@@ -9,7 +9,7 @@ class Credits extends AbstractCommand
     /**
      * Fetch the amount of credit available under your account
      *
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function get()
     {

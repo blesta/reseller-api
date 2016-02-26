@@ -1,11 +1,11 @@
 <?php
-namespace blesta\ResellerApi\Tests;
+namespace Blesta\ResellerApi\Tests;
 
-use blesta\ResellerApi\Response;
+use Blesta\ResellerApi\Response;
 use PHPUnit_Framework_TestCase;
 
 /**
- * @coversDefaultClass \blesta\ResellerApi\Response
+ * @coversDefaultClass \Blesta\ResellerApi\Response
  */
 class ResponseTest extends PHPUnit_Framework_TestCase
 {

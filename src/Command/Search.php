@@ -1,5 +1,5 @@
 <?php
-namespace blesta\ResellerApi\Command;
+namespace Blesta\ResellerApi\Command;
 
 /**
  * Search
@@ -45,7 +45,7 @@ class Search extends AbstractCommand
      * license key, domain, IP, and install path. Only non-canceled licenses
      * are returned. Up to 25 results are returned for each response.
      *
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function get()
     {

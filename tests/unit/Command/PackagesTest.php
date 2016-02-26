@@ -1,10 +1,10 @@
 <?php
-namespace blesta\ResellerApi\Tests\Command;
+namespace Blesta\ResellerApi\Tests\Command;
 
-use blesta\ResellerApi\Command\Packages;
+use Blesta\ResellerApi\Command\Packages;
 
 /**
- * @coversDefaultClass \blesta\ResellerApi\Command\Packages
+ * @coversDefaultClass \Blesta\ResellerApi\Command\Packages
  */
 class PackagesTest extends BaseCommand
 {

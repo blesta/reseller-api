@@ -1,7 +1,7 @@
 <?php
-namespace blesta\ResellerApi\Command;
+namespace Blesta\ResellerApi\Command;
 
-use blesta\ResellerApi\ConnectionInterface;
+use Blesta\ResellerApi\ConnectionInterface;
 
 /**
  * Abstract Command
@@ -9,7 +9,7 @@ use blesta\ResellerApi\ConnectionInterface;
 abstract class AbstractCommand implements CommandInterface
 {
     /**
-     * @var \blesta\ResellerApi\ConnectionInterface
+     * @var \Blesta\ResellerApi\ConnectionInterface
      */
     protected $connection;
 

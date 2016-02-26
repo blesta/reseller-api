@@ -1,7 +1,7 @@
 <?php
-namespace blesta\ResellerApi\Command;
+namespace Blesta\ResellerApi\Command;
 
-use blesta\ResellerApi\ConnectionInterface;
+use Blesta\ResellerApi\ConnectionInterface;
 
 /**
  * Command Interface
@@ -9,7 +9,7 @@ use blesta\ResellerApi\ConnectionInterface;
 interface CommandInterface
 {
     /**
-     * @param \blesta\ResellerApi\ConnectionInterface $connection The connection
+     * @param \Blesta\ResellerApi\ConnectionInterface $connection The connection
      */
     public function __construct(ConnectionInterface $connection);
 }

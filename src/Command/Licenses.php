@@ -1,5 +1,5 @@
 <?php
-namespace blesta\ResellerApi\Command;
+namespace Blesta\ResellerApi\Command;
 
 /**
  * Licenses
@@ -12,7 +12,7 @@ class Licenses extends AbstractCommand
      * @param array $data An array of key/value pairs:
      *  - pricing_id The pricing ID
      *  - test_mode "true" to enable test mode
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function add(array $data)
     {
@@ -30,7 +30,7 @@ class Licenses extends AbstractCommand
      *  - license The license key
      *  - reissue_status "reissue" to enable reissue
      *  - test_mode "true" to enable test mode
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function update(array $data)
     {
@@ -47,7 +47,7 @@ class Licenses extends AbstractCommand
      * @param array $data An array of key/value pairs:
      *  - license The license key
      *  - test_mode "true" to enable test mode
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function cancel(array $data)
     {
@@ -64,7 +64,7 @@ class Licenses extends AbstractCommand
      * @param array $data An array of key/value pairs:
      *  - license The license key
      *  - test_mode "true" to enable test mode
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function suspend(array $data)
     {
@@ -81,7 +81,7 @@ class Licenses extends AbstractCommand
      * @param array $data An array of key/value pairs:
      *  - license The license key
      *  - test_mode "true" to enable test mode
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function unsuspend(array $data)
     {

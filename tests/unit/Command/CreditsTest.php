@@ -1,10 +1,10 @@
 <?php
-namespace blesta\ResellerApi\Tests\Command;
+namespace Blesta\ResellerApi\Tests\Command;
 
-use blesta\ResellerApi\Command\Credits;
+use Blesta\ResellerApi\Command\Credits;
 
 /**
- * @coversDefaultClass \blesta\ResellerApi\Command\Credits
+ * @coversDefaultClass \Blesta\ResellerApi\Command\Credits
  */
 class CreditsTest extends BaseCommand
 {

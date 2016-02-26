@@ -1,5 +1,5 @@
 <?php
-namespace blesta\ResellerApi;
+namespace Blesta\ResellerApi;
 
 /**
  * Connection Interface
@@ -20,7 +20,7 @@ interface ConnectionInterface
      * @param string $method get, post, put, delete, etc.
      * @param string $uri The URI relative to the base URL
      * @param array $data
-     * @return \blesta\ResellerApi\ResponseInterface
+     * @return \Blesta\ResellerApi\ResponseInterface
      */
     public function send($method, $uri = '', array $data = array());
 }
