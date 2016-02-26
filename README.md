@@ -19,7 +19,7 @@ composer require blesta/reseller-api:~1.0
 Initialize your connection. You'll need to inject this connection into any command type you wish to initialize.
 
 ```php
-use blesta\ResellerApi\Connection;
+use Blesta\ResellerApi\Connection;
 
 $connection = new Connection();
 $connection->setBasicAuth($username, $password);
@@ -30,7 +30,7 @@ $connection->setBasicAuth($username, $password);
 Allows fetching available credit on your account.
 
 ```php
-use blesta\ResellerApi\Command\Credits;
+use Blesta\ResellerApi\Command\Credits;
 
 $credits = new Credits($connection);
 ```
@@ -47,7 +47,7 @@ echo $result->response();
 Allows fetching information on available packages.
 
 ```php
-use blesta\ResellerApi\Command\Packages;
+use Blesta\ResellerApi\Command\Packages;
 
 $packages = new Packages($connection);
 ```
@@ -70,7 +70,7 @@ print_r($result->response());
 Allows you to add, update, suspend, unsuspend, and cancel a license.
 
 ```php
-use blesta\ResellerApi\Command\Licenses;
+use Blesta\ResellerApi\Command\Licenses;
 
 $licenses = new Licenses($connection);
 ```
@@ -131,7 +131,7 @@ $licenses->unsuspend($data);
 Search for a particular license. Searches over license key, domain, IP address and installation path.
 
 ```php
-use blesta\ResellerApi\Command\Search;
+use Blesta\ResellerApi\Command\Search;
 
 $search = new Search($connection);
 $result = $search->data('search string')
@@ -145,7 +145,7 @@ print_r($result->response());
 The examples shown in the Basic Usage section demonstrate direct usage of command objects. You may find the built-in command factory more user friendly.
 
 ```php
-$commandFactory = new \blesta\ResellerApi\Command\CommandFactory();
+$commandFactory = new \Blesta\ResellerApi\Command\CommandFactory();
 $credits = $commandFactory->create('Credits', $connection);
 $packages = $commandFactory->create('Packages', $connection);
 $licenses = $commandFactory->create('Licenses', $connection);

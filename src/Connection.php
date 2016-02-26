@@ -1,5 +1,5 @@
 <?php
-namespace blesta\ResellerApi;
+namespace Blesta\ResellerApi;
 
 /**
  * Connection

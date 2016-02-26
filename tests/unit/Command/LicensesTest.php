@@ -1,11 +1,10 @@
 <?php
-namespace blesta\ResellerApi\Tests\Command;
+namespace Blesta\ResellerApi\Tests\Command;
 
-use blesta\ResellerApi\Command\Licenses;
-use blesta\ResellerApi\Command\CommandInterface;
+use Blesta\ResellerApi\Command\Licenses;
 
 /**
- * @coversDefaultClass \blesta\ResellerApi\Command\Licenses
+ * @coversDefaultClass \Blesta\ResellerApi\Command\Licenses
  */
 class LicensesTest extends BaseCommand
 {

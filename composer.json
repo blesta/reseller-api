@@ -17,16 +17,16 @@
     "require-dev": {
         "phpunit/phpunit": "~4.0",
         "squizlabs/php_codesniffer": "~2.2",
-        "satooshi/php-coveralls": "dev-master"
+        "satooshi/php-coveralls": "~1.0"
     },
     "autoload": {
         "psr-4": {
-            "blesta\\ResellerApi\\": "src"
+            "Blesta\\ResellerApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "blesta\\ResellerApi\\Tests\\": "tests"
+            "Blesta\\ResellerApi\\Tests\\": "tests"
         }
     }
 }

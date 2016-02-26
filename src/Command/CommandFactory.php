@@ -1,7 +1,7 @@
 <?php
-namespace blesta\ResellerApi\Command;
+namespace Blesta\ResellerApi\Command;
 
-use blesta\ResellerApi\ConnectionInterface;
+use Blesta\ResellerApi\ConnectionInterface;
 
 /**
  * Command Factory
@@ -12,8 +12,8 @@ class CommandFactory
      * Creates an instance of the command
      *
      * @param string $command The command to initialize
-     * @param \blesta\ResellerApi\ConnectionInterface $connection The connection
-     * @return \blesta\ResellerApi\Command\CommandInterface
+     * @param \Blesta\ResellerApi\ConnectionInterface $connection The connection
+     * @return \Blesta\ResellerApi\Command\CommandInterface
      */
     public function create($command, ConnectionInterface $connection)
     {

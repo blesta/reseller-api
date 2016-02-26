@@ -1,11 +1,11 @@
 <?php
-namespace blesta\ResellerApi\Tests {
+namespace Blesta\ResellerApi\Tests {
 
-    use blesta\ResellerApi\Connection;
+    use Blesta\ResellerApi\Connection;
     use PHPUnit_Framework_TestCase;
 
     /**
-     * @coversDefaultClass \blesta\ResellerApi\Connection
+     * @coversDefaultClass \Blesta\ResellerApi\Connection
      */
     class ConnectionTest extends PHPUnit_Framework_TestCase
     {
@@ -15,7 +15,7 @@ namespace blesta\ResellerApi\Tests {
         public function testConstruct()
         {
             $this->assertInstanceOf(
-                '\blesta\ResellerApi\ConnectionInterface',
+                '\Blesta\ResellerApi\ConnectionInterface',
                 new Connection()
             );
         }
@@ -27,7 +27,7 @@ namespace blesta\ResellerApi\Tests {
          */
         public function testSend()
         {
-            $mockResponse = $this->getMockForAbstractClass('\blesta\ResellerApi\ResponseInterface');
+            $mockResponse = $this->getMockForAbstractClass('\Blesta\ResellerApi\ResponseInterface');
             $mockResponse->expects($this->once())
                 ->method('withBody')
                 ->with('{}')
@@ -44,7 +44,7 @@ namespace blesta\ResellerApi\Tests {
     }
 }
 
-namespace blesta\ResellerApi {
+namespace Blesta\ResellerApi {
 
     function curl_exec($ch)
     {

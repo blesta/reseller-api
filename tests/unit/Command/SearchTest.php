@@ -1,10 +1,10 @@
 <?php
-namespace blesta\ResellerApi\Tests\Command;
+namespace Blesta\ResellerApi\Tests\Command;
 
-use blesta\ResellerApi\Command\Search;
+use Blesta\ResellerApi\Command\Search;
 
 /**
- * @coversDefaultClass \blesta\ResellerApi\Command\Search
+ * @coversDefaultClass \Blesta\ResellerApi\Command\Search
  */
 class SearchTest extends BaseCommand
 {
